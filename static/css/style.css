@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&family=Roboto+Mono:wght@100;200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#first {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+label[for="name"] {
+  font-size: xx-large;
+}
+
+#name {
+  font-family: "Roboto Mono", monospace;
+  font-size: x-large;
+  padding: 1rem;
+  width: 30vh;
+  border: 2px solid steelblue;
+}
+
+#name:focus {
+  outline: none;
+}
+
+#submit {
+  padding: 1.5rem 3rem;
+  border: none;
+  background: #b40000;
+  color: white;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+#output {
+  margin: 2vh 0;
+  min-height: 30vh;
+  width: 50vw;
+}
+
+#output #tasklist {
+  padding: 2rem;
+  height: 500px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+#output #tasklist li {
+  font-family: "Yomogi", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  background: #b40000;
+  color: white;
+  margin: 5px 0;
+  padding: 1.4rem;
+  border-radius: 20px;
+}
+
+#output #tasklist li .update {
+  padding: 0.75rem 2rem;
+  background: #f74f02;
+  color: white;
+  border: none;
+}
+
+#output #tasklist li .delete {
+  padding: 0.75rem 2rem;
+  background: #ca1313;
+  color: white;
+  border: none;
+}
+
+#output #tasklist li span {
+  display: block;
+}
+
+#output #tasklist li ::-moz-selection {
+  background: #e70c0c;
+}
+
+#output #tasklist li ::selection {
+  background: #e70c0c;
+}
+/*# sourceMappingURL=style.css.map */
